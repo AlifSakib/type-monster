@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <title>Blogs</title>
+</head>
+
+<body>
+    <h1 class="text-center font-bold text-6xl">Blogs</h1>
+
+    <main>
+        <article>
+            <section class="mt-10">
+                <div id="accordion-open" data-accordion="open">
+                    <h2 id="accordion-open-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+                            data-accordion-target="#accordion-open-body-1" aria-expanded="true"
+                            aria-controls="accordion-open-body-1">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Local Storage Vs Session Storage</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-open-body-1" class="" aria-labelledby="accordion-open-heading-1">
+                        <div
+                            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <ul class="mb-2 text-black dark:text-gray-400 ">
+                                <h1 class="font-bold">Local Storage</h1>
+
+                                <li>1. The capaciy of locl storage is 5/10 MB</li>
+                                <li>2. The client can only read local storage</li>
+                                <li>3. Local Storage data can be deleted by JavaScript manually</li>
+                            </ul>
+                            <ul class="mb-2 text-black dark:text-gray-400 ">
+
+                                <h1 class="font-bold">Session Storage</h1>
+                                <li>1. The capaciy of locl storage is 5 MB</li>
+                                <li>2. The client can not read session storage</li>
+                                <li>3. As it is session based so data is only available during the browsing time , it
+                                    the browser or tab closed data will disapare automatic</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <h2 id="accordion-open-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-open-body-2" aria-expanded="false"
+                            aria-controls="accordion-open-body-2">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>Global Scope Vs Block Scope</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                            <ul class="mb-2 text-black dark:text-gray-400 ">
+                                <h1 class="font-bold">Global Scope</h1>
+
+                                <li>1. The variables defined outside of any function or curly brackets are known as
+                                    global variables and those global variables are called global scope</li>
+                                <li>2. Global scope means that the variable can be access from anypart of the entire
+                                    program.</li>
+
+                            </ul>
+                            <ul class="mb-2 text-black dark:text-gray-400">
+                                <h1 class="font-bold">Local Scope</h1>
+
+                                <li>1. It we declare a variable inside a function or {} curly brackers then they are
+                                    known as local variable and they have local scope</li>
+                                <li>2. We have only accessinside the function or inside the scope where we declare the
+                                    variable </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 id="accordion-open-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-open-body-3" aria-expanded="false"
+                            aria-controls="accordion-open-body-3">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>How Event Loop Works</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                            <h1 class="font-bold
+                            ">Event Loop</h1>
+                            <p>Event loop take places when we think about anyncronous javaScript . The event loop
+                                monitor the call stack and the callBack queue. We know javaScript store it wroks into a
+                                call stack , and when we call some async function then javaScript sends it into the web
+                                Api , where the async function complete it process and then it sended to the event loop
+                                , the event loop keep eyes on call stack and when the call stack it empty it push the
+                                tasks into the call stack , and thats how the whole process or event loop works.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-open-heading-4">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-open-body-4" aria-expanded="false"
+                            aria-controls="accordion-open-body-3">
+                            <span class="flex items-center"><svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>How we will get undefined</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                            <ul>
+                                <h1 class="font-bold">Ways of getting Undefined</h1>
+                                <p>We know Undefined is a Value and also a Data-Type</p>
+
+                                <li>1 . If a variable value is not assigned it returns undefined </li>
+                                <li>2 . A function return undefined if the value was not returned</li>
+                                <li>3 . If we want no access a property that does not have in a object we will get
+                                    undefined</li>
+                                <li>4. If we want to access array index that does not have any value we will get
+                                    undefined.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
